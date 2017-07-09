@@ -1,0 +1,1633 @@
+
+
+
+
+ a = 0
+ b = 0
+ c = 0
+
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 104
+Got = 12
+
+
+==============================================================================
+
+
+
+
+
+ a = 1
+ b = 1
+ c = 1
+
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 108
+Got = 4294967060
+
+
+==============================================================================
+
+
+
+
+
+ a = 0
+ b = 0
+ c = 1
+ error = 8197
+ Printing error ............. 
+
+
+ The error is = 8197
+
+
+==============================================================================
+
+
+
+
+
+ a = 1
+ b = 1
+ c = 0
+ error = 8197
+ Printing error ............. 
+
+
+ The error is = 8197
+
+
+==============================================================================
+
+
+
+
+
+ a = 0
+ b = 0
+ c = 1
+ error = 8197
+ Printing error ............. 
+
+
+ The error is = 8197
+
+
+==============================================================================
+
+
+
+
+ This is going to need sign-extension ! 
+casted immediate = -4
+ Offset = -16
+ within BLTZAL the IF 
+
+ Incrmeneted pc 
+
+ This is going to need sign-extension ! 
+
+
+SRL/SRLV/SLL/SLLV output 0
+Counter is 1 - check!
+ value of counter after re-initialization is= 0
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 96
+ checking expected pc and return address....
+ Pc that we get is 96
+ offst that we have is -16
+ pc that we expect is 96
+ return address that we get is = 116
+ return adress that we expect is = 116
+ this is after extra message 
+
+
+==============================================================================
+
+
+
+
+ This is going to need sign-extension ! 
+
+
+ a = 1
+ b = 1
+ c = 0
+ error = 8197
+ Printing error ............. 
+
+
+ The error is = 8197
+
+
+==============================================================================
+
+
+
+
+
+
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 100
+ The error is = 0
+
+
+==============================================================================
+
+
+
+
+
+
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 104
+ The error is = 0
+
+
+==============================================================================
+
+
+
+
+
+
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 108
+Got = 8311
+
+
+==============================================================================
+
+
+
+
+ This is going to need sign-extension ! 
+casted immediate = -2
+ Offset = -8
+ register values are equal ! 
+ counter has been incremented
+ value of counter after incrementing is= 1
+
+ Incrmeneted pc 
+
+ This is going to need sign-extension ! 
+
+
+SRL/SRLV/SLL/SLLV output 0
+Counter is 1 - check!
+ value of counter after re-initialization is= 0
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 104
+ checking expected pc...... 
+ Pc that we get is 104
+ offst that we have is -8
+ pc that we expect is 104
+ this is after extra message 
+
+
+==============================================================================
+
+
+
+
+
+
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 108
+ The error is = 0
+
+
+==============================================================================
+
+
+
+
+ This is going to need sign-extension ! 
+
+
+
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 112
+ The error is = 0
+
+
+==============================================================================
+
+
+
+ I am in AND 
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 116
+Got = 5896
+
+
+==============================================================================
+
+
+
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 120
+Got = 38152
+
+
+==============================================================================
+
+
+
+casted immediate = 20
+ Offset = 80
+ register values are equal ! 
+ counter has been incremented
+ value of counter after incrementing is= 1
+
+ Incrmeneted pc 
+
+
+SRL/SRLV/SLL/SLLV output 0
+Counter is 1 - check!
+ value of counter after re-initialization is= 0
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 204
+ checking expected pc...... 
+ Pc that we get is 204
+ offst that we have is 80
+ pc that we expect is 204
+ this is after extra message 
+
+
+==============================================================================
+
+
+
+ I am in OR 
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 208
+Got = 125
+
+
+==============================================================================
+
+
+
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 212
+Got = 2147483647
+
+
+==============================================================================
+
+
+
+casted immediate = 100
+ Offset = 400
+ register value is >=0 ! 
+ counter has been incremented
+ value of counter after incrementing is= 1
+
+ Incrmeneted pc 
+
+
+SRL/SRLV/SLL/SLLV output 0
+Counter is 1 - check!
+ value of counter after re-initialization is= 0
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 616
+ checking expected pc...... 
+ Pc that we get is 616
+ offst that we have is 400
+ pc that we expect is 616
+ this is after extra message 
+
+
+==============================================================================
+
+
+
+
+
+ a = 0
+ b = 0
+ c = 0
+
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 620
+Got = 12
+
+
+==============================================================================
+
+
+
+ I am in AND 
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 624
+Got = 5896
+
+
+==============================================================================
+
+
+
+casted immediate = 20
+ Offset = 80
+
+ Incrmeneted pc 
+
+
+SRL/SRLV/SLL/SLLV output 0
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 632
+ checking UNexpected pc...... 
+ Pc that we get is 632
+ pc that we expect is 632
+ this is after extra message 
+
+
+==============================================================================
+
+
+
+ I am in AND 
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 636
+Got = 5896
+
+
+==============================================================================
+
+
+
+ I am in AND 
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 640
+Got = 5896
+
+
+==============================================================================
+
+
+
+ I am in XOR 
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 644
+Got = 4294966811
+
+
+==============================================================================
+
+
+
+casted immediate = 4
+ Offset = 16
+ thisis BGTZ ---------
+ register value is > 0 ! 
+ counter has been incremented
+ value of counter after incrementing is= 1
+
+ Incrmeneted pc 
+
+
+SRL/SRLV/SLL/SLLV output 0
+Counter is 1 - check!
+ value of counter after re-initialization is= 0
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 664
+ checking expected pc...... 
+ Pc that we get is 664
+ offst that we have is 16
+ pc that we expect is 664
+ this is after extra message 
+
+
+==============================================================================
+
+
+
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 668
+Got = 65051
+
+
+==============================================================================
+
+
+
+casted immediate = 20
+ Offset = 80
+
+ Incrmeneted pc 
+
+
+SRL/SRLV/SLL/SLLV output 0
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 676
+ checking UNexpected pc...... 
+ Pc that we get is 676
+ pc that we expect is 676
+ this is after extra message 
+
+
+==============================================================================
+
+
+
+casted immediate = 100
+ Offset = 400
+
+ Incrmeneted pc 
+
+
+SRL/SRLV/SLL/SLLV output 0
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 684
+ checking UNexpected pc...... 
+ Pc that we get is 684
+ pc that we expect is 684
+ this is after extra message 
+
+
+==============================================================================
+
+
+
+ counter has been incremented
+ value of counter after incrementing is= 1
+
+ Incrmeneted pc 
+
+
+SRL/SRLV/SLL/SLLV output 0
+Counter is 1 - check!
+ value of counter after re-initialization is= 0
+ Previous was a jump 
+effectibve trget address = 16
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 20
+ checking expected pc...... 
+ Pc that we get is 20
+ offst that we have is 400
+ pc that we expect is 20
+ this is after extra message 
+
+
+==============================================================================
+
+
+
+ I am in SUBU/SUB 
+reg 1 in SUBU/SUB = 7
+reg 2 in SUBU/SUB = 5
+value of subu/sub result = 2
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 24
+Got = 2
+
+
+==============================================================================
+
+
+
+ I am in SUBU/SUB 
+reg 1 in SUBU/SUB = 569
+reg 2 in SUBU/SUB = 4294967294
+value of subu/sub result = 571
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 28
+Got = 571
+
+
+==============================================================================
+
+
+
+casted immediate = 20
+ Offset = 80
+
+ Incrmeneted pc 
+
+
+SRL/SRLV/SLL/SLLV output 0
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 36
+ checking UNexpected pc...... 
+ Pc that we get is 36
+ pc that we expect is 36
+ this is after extra message 
+
+
+==============================================================================
+
+
+
+ I am in SUBU/SUB 
+reg 1 in SUBU/SUB = 7
+reg 2 in SUBU/SUB = 9
+value of subu/sub result = 4294967294
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 40
+Got = 4294967294
+
+
+==============================================================================
+
+
+
+storing return address inn reg 31
+ counter has been incremented
+ value of counter after incrementing is= 1
+
+ Incrmeneted pc 
+
+
+SRL/SRLV/SLL/SLLV output 0
+Counter is 1 - check!
+ value of counter after re-initialization is= 0
+ Previous was a jump 
+effectibve trget address = 36
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 40
+ checking expected pc and return address....
+ Pc that we get is 40
+ offst that we have is 80
+ pc that we expect is 40
+ return address that we get is = 48
+ return adress that we expect is = 48
+ this is after extra message 
+
+
+==============================================================================
+
+
+
+ I am in JALR/JR 
+ counter has been incremented
+ value of counter after incrementing is= 1
+
+ Incrmeneted pc 
+ expectd pc = 560
+
+
+SRL/SRLV/SLL/SLLV output 0
+Counter is 1 - check!
+ value of counter after re-initialization is= 0
+ Previous was a r-type jump 
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 560
+ checking expected pc...... 
+ Pc that we get is 560
+ offst that we have is 80
+ pc that we expect is 560
+ this is after extra message 
+
+
+==============================================================================
+
+
+
+
+ This is going to need sign-extension ! 
+sw offset = -9
+sw_address in sw = 80
+
+
+ store full word 
+ Stored the contents of the index_dest reg at the base+offset in memory ..........
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 564
+
+ This is going to need sign-extension ! 
+
+
+==============================================================================
+
+
+
+
+ This is going to need sign-extension ! 
+lw offset = -9
+lw_address in sw = 80
+load to dest reg 1000
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 568
+Got = 1000
+
+
+==============================================================================
+
+
+
+sw offset = 10
+sw_address in sw = 99
+ error = 8194
+ Printing error ............. 
+
+
+yo yo honey singh 
+
+
+==============================================================================
+
+
+
+lw offset = 10
+lw_address in sw = 99
+ error = 8194
+ Printing error ............. 
+
+
+yo yo honey singh 
+
+
+==============================================================================
+
+
+
+sw offset = 11
+sw_address in sw = 800
+
+
+ store full word 
+ Stored the contents of the index_dest reg at the base+offset in memory ..........
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 572
+
+
+==============================================================================
+
+
+
+lw offset = 11
+lw_address in sw = 800
+load to dest reg 600
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 576
+Got = 600
+
+
+==============================================================================
+
+
+
+ I am in SUBU/SUB 
+reg 1 in SUBU/SUB = 7
+reg 2 in SUBU/SUB = 9
+value of subu/sub result = 4294967294
+lolololo
+ a = 0
+ b = 1
+ c = 0
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 580
+Got = 4294967294
+
+
+==============================================================================
+
+
+
+ I am in SUBU/SUB 
+reg 1 in SUBU/SUB = 2147483600
+reg 2 in SUBU/SUB = 4294967196
+value of subu/sub result = 2147483700
+lolololo
+ a = 1
+ b = 1
+ c = 0
+2SCOMPLEMENT OVERFLOW 
+ error = 8197
+ Printing error ............. 
+
+
+ The error is = 8197
+
+
+==============================================================================
+
+
+
+ I am in SUBU/SUB 
+reg 1 in SUBU/SUB = 2147483696
+reg 2 in SUBU/SUB = 100
+value of subu/sub result = 2147483596
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 584
+Got = 2147483596
+
+
+==============================================================================
+
+
+
+SRL/SRLV/SLL/SLLV output 3
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 588
+Got = 3
+
+
+==============================================================================
+
+
+
+SRL/SRLV/SLL/SLLV output 1
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 592
+Got = 1
+
+
+==============================================================================
+
+
+
+ SRLv / SLLV 
+SRL/SRLV/SLL/SLLV output 3
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 596
+Got = 3
+
+
+==============================================================================
+
+
+
+ SRLv / SLLV 
+SRL/SRLV/SLL/SLLV output 1
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 600
+Got = 1
+
+
+==============================================================================
+
+
+
+SRA/SRAV output -188849749
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 604
+Got = 4106117547
+
+
+==============================================================================
+
+
+
+SRA/SRAV output 356032530
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 608
+Got = 356032530
+
+
+==============================================================================
+
+
+
+SRA/SRAV output 0
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 612
+Got = 0
+
+
+==============================================================================
+
+
+
+ SRAV 
+SRA/SRAV output -188849749
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 616
+Got = 4106117547
+
+
+==============================================================================
+
+
+
+ SRAV 
+SRA/SRAV output 356032530
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 620
+Got = 356032530
+
+
+==============================================================================
+
+
+
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 624
+Got = 0
+
+
+==============================================================================
+
+
+
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 628
+Got = 0
+
+
+==============================================================================
+
+
+
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 632
+Got = 1
+
+
+==============================================================================
+
+
+
+
+ This is going to need sign-extension ! 
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 636
+Got = 0
+
+
+==============================================================================
+
+
+
+
+ This is going to need sign-extension ! 
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 640
+Got = 1
+
+
+==============================================================================
+
+
+
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 644
+Got = 1
+
+
+==============================================================================
+
+
+
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 648
+Got = 0
+
+
+==============================================================================
+
+
+
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 652
+Got = 0
+
+
+==============================================================================
+
+
+
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 656
+Got = 1
+
+
+==============================================================================
+
+
+
+
+ This is going to need sign-extension ! 
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 660
+Got = 0
+
+
+==============================================================================
+
+
+
+
+ This is going to need sign-extension ! 
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 664
+Got = 1
+
+
+==============================================================================
+
+
+
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 668
+Got = 0
+
+
+==============================================================================
+
+
+
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 672
+Got = 1
+
+
+==============================================================================
+
+
+
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 676
+Got = 0
+
+
+==============================================================================
+
+
+
+SRL/SRLV/SLL/SLLV output 18848
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 680
+Got = 18848
+
+
+==============================================================================
+
+
+
+SRL/SRLV/SLL/SLLV output 4293132288
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 684
+Got = 4293132288
+
+
+==============================================================================
+
+
+
+ SRLv / SLLV 
+SRL/SRLV/SLL/SLLV output 18848
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 688
+Got = 18848
+
+
+==============================================================================
+
+
+
+ SRLv / SLLV 
+SRL/SRLV/SLL/SLLV output 4293132288
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 692
+Got = 4293132288
+
+
+==============================================================================
+
+
+
+
+ This is going to need sign-extension ! 
+sw offset = -9
+sw_address in sw = 80
+
+
+store half word 
+ Stored the contents of the index_dest reg at the base+offset in memory ..........
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 696
+
+ This is going to need sign-extension ! 
+ memeory address from whcihc we read 80
+ Compare = 42737
+ 16 bit value in dest reg = 42737
+
+
+==============================================================================
+
+
+
+
+ This is going to need sign-extension ! 
+lw offset = -9
+lw_address in sw = 80
+
+ This is going to need sign-extension ! 
+load to dest reg 4294944497
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 700
+Got = 4294944497
+
+
+==============================================================================
+
+
+
+
+ This is going to need sign-extension ! 
+lw offset = -9
+lw_address in sw = 80
+load to dest reg 42737
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 704
+Got = 42737
+
+
+==============================================================================
+
+
+
+sw offset = 77
+sw_address in sw = 166
+ error = 8194
+ Printing error ............. 
+
+
+yo yo honey singh 
+
+
+==============================================================================
+
+
+
+lw offset = 77
+lw_address in sw = 166
+ error = 8194
+ Printing error ............. 
+
+
+yo yo honey singh 
+
+
+==============================================================================
+
+
+
+lw offset = 77
+lw_address in sw = 166
+ error = 8194
+ Printing error ............. 
+
+
+yo yo honey singh 
+
+
+==============================================================================
+
+
+
+sw offset = 11
+sw_address in sw = 100
+
+
+store half word 
+ Stored the contents of the index_dest reg at the base+offset in memory ..........
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 708
+ memeory address from whcihc we read 100
+ Compare = 5656
+ 16 bit value in dest reg = 5656
+
+
+==============================================================================
+
+
+
+lw offset = 11
+lw_address in sw = 100
+load to dest reg 5656
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 712
+Got = 5656
+
+
+==============================================================================
+
+
+
+lw offset = 11
+lw_address in sw = 100
+load to dest reg 5656
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 716
+Got = 5656
+
+
+==============================================================================
+
+
+
+
+
+ a = 0
+ b = 0
+ c = 0
+
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 720
+Got = 0
+
+
+==============================================================================
+
+
+
+
+ This is going to need sign-extension ! 
+sw offset = -9
+sw_address in sw = 100
+
+
+store  byte 
+ Stored the contents of the index_dest reg at the base+offset in memory ..........
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 724
+
+ This is going to need sign-extension ! 
+ SB compare = 83
+
+
+==============================================================================
+
+
+
+
+ This is going to need sign-extension ! 
+lw offset = -9
+lw_address in sw = 100
+load to dest reg 83
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 728
+Got = 83
+
+
+==============================================================================
+
+
+
+
+ This is going to need sign-extension ! 
+lw offset = -9
+lw_address in sw = 100
+load to dest reg 83
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 732
+Got = 83
+
+
+==============================================================================
+
+
+
+sw offset = 11
+sw_address in sw = 140
+
+
+store  byte 
+ Stored the contents of the index_dest reg at the base+offset in memory ..........
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 736
+ SB compare = 213
+
+
+==============================================================================
+
+
+
+lw offset = 11
+lw_address in sw = 140
+load to dest reg 4294967253
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 740
+Got = 4294967253
+
+
+==============================================================================
+
+
+
+lw offset = 11
+lw_address in sw = 140
+load to dest reg 213
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 744
+Got = 213
+
+
+==============================================================================
+
+
+
+sw offset = 6
+sw_address in sw = 135
+ error = 8194
+ Printing error ............. 
+
+
+yo yo honey singh 
+
+
+==============================================================================
+
+
+
+lw offset = 6
+lw_address in sw = 135
+ error = 8194
+ Printing error ............. 
+
+
+yo yo honey singh 
+
+
+==============================================================================
+
+
+
+lw offset = 6
+lw_address in sw = 135
+ error = 8194
+ Printing error ............. 
+
+
+yo yo honey singh 
+
+
+==============================================================================
+
+
+
+ I am in JALR/JR 
+ counter has been incremented
+ value of counter after incrementing is= 1
+
+ Incrmeneted pc 
+ expectd pc = 180
+
+
+SRL/SRLV/SLL/SLLV output 0
+Counter is 1 - check!
+ value of counter after re-initialization is= 0
+ Previous was a r-type jump 
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 180
+ checking expected pc and return address....
+ Pc that we get is 180
+ offst that we have is 80
+ pc that we expect is 180
+ return address that we get is = 752
+ return adress that we expect is = 752
+ this is after extra message 
+
+
+==============================================================================
+
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 184
+Got = 3689873408
+
+
+==============================================================================
+
+
+
+casted immediate = 4
+ Offset = 16
+ this is BLTZ 
+ register value is < 0  ! 
+ counter has been incremented
+ value of counter after incrementing is= 1
+
+ Incrmeneted pc 
+
+
+SRL/SRLV/SLL/SLLV output 0
+Counter is 1 - check!
+ value of counter after re-initialization is= 0
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 204
+ checking expected pc...... 
+ Pc that we get is 204
+ offst that we have is 16
+ pc that we expect is 204
+ this is after extra message 
+
+
+==============================================================================
+
+
+
+SRL/SRLV/SLL/SLLV output 4293132288
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 208
+Got = 4293132288
+
+
+==============================================================================
+
+
+
+sw offset = 11
+sw_address in sw = 100
+
+
+store half word 
+ Stored the contents of the index_dest reg at the base+offset in memory ..........
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 212
+ memeory address from whcihc we read 100
+ Compare = 5656
+ 16 bit value in dest reg = 5656
+
+
+==============================================================================
+
+
+
+casted immediate = 4
+ Offset = 16
+
+ Incrmeneted pc 
+
+
+SRL/SRLV/SLL/SLLV output 0
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 220
+ checking UNexpected pc...... 
+ Pc that we get is 220
+ pc that we expect is 220
+ this is after extra message 
+
+
+==============================================================================
+
+
+
+casted immediate = 20
+ Offset = 80
+ register values are NOT equal ! 
+ counter has been incremented
+ value of counter after incrementing is= 1
+
+ Incrmeneted pc 
+
+
+SRL/SRLV/SLL/SLLV output 0
+Counter is 1 - check!
+ value of counter after re-initialization is= 0
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 304
+ checking expected pc...... 
+ Pc that we get is 304
+ offst that we have is 80
+ pc that we expect is 304
+ this is after extra message 
+
+
+==============================================================================
+
+
+
+ I am in SUBU/SUB 
+reg 1 in SUBU/SUB = 2147483696
+reg 2 in SUBU/SUB = 100
+value of subu/sub result = 2147483596
+lolololo
+ a = 0
+ b = 0
+ c = 1
+2SCOMPLEMENT OVERFLOW 
+ error = 8197
+ Printing error ............. 
+
+
+ The error is = 8197
+
+
+==============================================================================
+
+
+
+
+ This is going to need sign-extension ! 
+casted immediate = -4
+ Offset = -16
+ within BGEZAL the IF 
+
+ Incrmeneted pc 
+
+ This is going to need sign-extension ! 
+
+
+SRL/SRLV/SLL/SLLV output 0
+Counter is 1 - check!
+ value of counter after re-initialization is= 0
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 292
+ checking expected pc and return address....
+ Pc that we get is 292
+ offst that we have is -16
+ pc that we expect is 292
+ return address that we get is = 312
+ return adress that we expect is = 312
+ this is after extra message 
+
+
+==============================================================================
+
+
+
+ I am in DIV
+Value of src_reh_1=-9
+Value of src_reh_2=2
+ Lo = -4
+
+ DIV ends 
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 296
+
+
+ I am in MFHI 
+ value going into dest reg is =-1
+ Incrmeneted pc 
+ pc after adding offset and increment is = 300
+
+
+ I am in MFLO 
+ value going into dest reg is =-4
+ Incrmeneted pc 
+ pc after adding offset and increment is = 304
+ HEY ! 
+
+
+==============================================================================
+
+
+
+ I am in DIVU 
+Value of src_reh_1=9
+Value of src_reh_2=4294967294
+ Lo = 0
+ Hi = 9
+
+ Incrmeneted pc 
+ pc after adding offset and increment is = 308
+
+
+ I am in MFHI 
+ value going into dest reg is =9
+ Incrmeneted pc 
+ pc after adding offset and increment is = 312
+
+
+ I am in MFLO 
+ value going into dest reg is =0
+ Incrmeneted pc 
+ pc after adding offset and increment is = 316
+ HEY ! 
+
+
+==============================================================================
+
+
+
+ I am in MTHI 
+ value going into HI reg is =100
+ Incrmeneted pc 
+ pc after adding offset and increment is = 320
+
+
+ I am in MFHI 
+ value going into dest reg is =100
+ Incrmeneted pc 
+ pc after adding offset and increment is = 324
+
+
+==============================================================================
+
+
+
+ I am in MFHI 
+ value going into dest reg is =100
+ Incrmeneted pc 
+ pc after adding offset and increment is = 328
+
+
+==============================================================================
+
+
+
+ I am in MTLO 
+ value going into LO reg is =200
+ Incrmeneted pc 
+ pc after adding offset and increment is = 332
+
+
+ I am in MFLO 
+ value going into dest reg is =200
+ Incrmeneted pc 
+ pc after adding offset and increment is = 336
+
+
+==============================================================================
+
+
+
+ I am in MFLO 
+ value going into dest reg is =200
+ Incrmeneted pc 
+ pc after adding offset and increment is = 340
+
+
+==============================================================================
+

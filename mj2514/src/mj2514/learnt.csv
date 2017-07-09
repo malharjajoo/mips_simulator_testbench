@@ -1,0 +1,101 @@
+Instruction-Name,index_first,index_second,immediate,instruction_index,index_dest,value_first,value_second,opcode,shift,functioncode,expected_error - Need to put in decimal value for the hex errors !!!,expected_value,extra_message ,testing_message
+ADD,4,5,0,0,3,7,5,0,0,32,0,12,get_value_from_dest_reg,Basic Testing- ADD
+ADD,4,5,0,0,3,-100,-136,0,0,32,0,-236,get_value_from_dest_reg,Basic Testing- ADD
+ADD,10,8,0,0,7,2147480000,32700,0,0,32,8197,0,check_overflow,Overflow Detection(Upper bound) - ADD
+ADD,10,8,0,0,7,-2147476000,-32700,0,0,32,8197,0,check_overflow,Overflow Detection(Lower bound) - ADD
+ADDI,10,0,32700,0,5,2147480000,0,8,0,0,8197,0,check_overflow,Overflow Detection(upper bound) - ADDI
+BLTZAL,15,0,-4,0,16,-191,0,1,0,0,0,0,check_expected_pc_and_return_address,NEGATIVE offset - BLTZAL
+ADDI,10,0,-32700,0,5,-2147480000,0,8,0,0,8197,0,check_overflow,Overflow Detection(lower bound) - ADDI
+ADDU,10,8,0,0,7,2147480000,32700,0,0,33,0,0,check_overflow,IGNORE Overflow(Upper bound) - ADDU
+ADDU,10,8,0,0,7,2147480000,-32700,0,0,33,0,0,check_overflow,IGNORE Overflow(Lower bound)   - ADDU
+ADDU,1,23,0,0,6,5000,3311,0,0,33,0,8311,get_value_from_dest_reg,Basic Testing - ADDU
+BEQ,5,0,-2,0,4,5,5,4,0,0,0,0,check_expected_pc,NEGATIVEOffset Testing - BEQ
+ADDIU,10,0,32700,0,5,2147480000,0,9,0,0,0,0,check_overflow,IGNORE Overflow(Upper bound) - ADDIU
+ADDIU,10,0,-32700,0,5,-2147480000,0,9,0,0,0,0,check_overflow,IGNORE Overflow(Lower bound) - ADDIU
+AND,10,4,0,0,7,2147473165,5896,0,0,36,0,5896,get_value_from_dest_reg,Basic testing - AND
+ANDI,10,0,40234,0,5,2147473165,0,12,0,0,0,38152,get_value_from_dest_reg,Basic Testing - ANDI
+BEQ,5,0,20,0,4,5,5,4,0,0,0,0,check_expected_pc,POSITIVE Offset Testing - BEQ
+OR,3,17,0,0,9,85,57,0,0,37,0,125,get_value_from_dest_reg,Basic Testing- OR
+ORI,10,0,65535,0,5,2147480000,0,13,0,0,0,2147483647,get_value_from_dest_reg,Basic Testing- ORI
+BGEZ,0,0,100,0,1,5,0,1,0,0,0,0,check_expected_pc,POSITIVE offset - BGEZ
+ADD,4,5,0,0,3,7,5,0,0,32,0,12,get_value_from_dest_reg,Basic Testing- ADD
+AND,10,4,0,0,7,2147473165,5896,0,0,36,0,5896,get_value_from_dest_reg,Basic testing - AND
+BEQ,5,0,20,0,4,5,8,4,0,0,0,216,check_UNexpected_pc,Condition False - BEQ
+AND,10,4,0,0,7,2147473165,5896,0,0,36,0,5896,get_value_from_dest_reg,Basic testing - AND
+AND,10,4,0,0,7,2147473165,5896,0,0,36,0,5896,get_value_from_dest_reg,Basic testing - AND
+XOR,4,5,0,0,20,-446,89,0,0,38,0,-485,get_value_from_dest_reg,Basic Testing- XOR
+BGTZ,18,0,4,0,0,9,4,7,0,0,0,0,check_expected_pc,Condition True - BGTZ
+XORI,4,0,-446,0,20,89,0,14,0,0,0,65051,get_value_from_dest_reg,Basic Testing- XORI
+BEQ,5,0,20,0,4,5,789,4,0,0,0,0,check_UNexpected_pc,POSITIVE Offset Testing - BEQ
+BLEZ,15,0,100,0,0,90,0,6,0,0,0,0,check_UNexpected_pc,Condition False - BLEZ
+J,0,0,0,5,0,0,0,2,0,0,0,0,check_expected_pc,Basic Testing - JUMP
+SUBU,4,5,0,0,3,7,5,0,0,35,0,2,get_value_from_dest_reg,Basic Testing- SUBU
+SUBU,4,5,0,0,3,569,-2,0,0,35,0,571,get_value_from_dest_reg,Basic Testing- SUBU
+BNE,5,0,20,0,4,8,8,5,0,0,0,216,check_UNexpected_pc,Condition False - BNE
+SUBU,4,5,0,0,3,7,9,0,0,35,0,4294967294,get_value_from_dest_reg,Basic Testing- SUBU
+JAL,0,0,0,10,0,0,0,3,0,0,0,0,check_expected_pc_and_return_address,Basic Testing - JAL
+JR,7,0,0,0,0,560,0,0,0,8,0,0,check_expected_pc,Basic Testing - JR
+SW,4,0,-9,0,20,89,1000,43,0,0,0,79,read_full_word_from_memory,Basic Testing-SW - Negative offset
+LW,10,0,-9,0,5,89,-900,35,0,0,0,1000,get_value_from_dest_reg,Basic Testing - LW - Negative offset
+SW,5,0,10,0,20,89,800,43,0,0,8194,79,check_invalid_alignment,Detection of invalid alignement- SW
+LW,10,0,10,0,5,89,-900,35,0,0,8194,-183,check_invalid_alignment,Detection of invalid alignement- LW
+SW,4,0,11,0,20,789,600,43,0,0,0,79,read_full_word_from_memory,Basic Testing- SW - Positive offset
+LW,10,0,11,0,5,789,-900,35,0,0,0,600,get_value_from_dest_reg,Basic Testing - LW - Positive offset
+SUB,4,5,0,0,3,7,9,0,0,34,0,4294967294,get_value_from_dest_reg,Basic Testing- SUB
+SUB,4,5,0,0,3,2147483600,-100,0,0,34,8197,0,check_overflow,Overflow Detection (Upper Bound)- SUB
+SUBU,4,5,0,0,3,-2147483600,100,0,0,35,0,2147483596,get_value_from_dest_reg,IGNORE Overflow - SUBU
+SRL,0,2,0,0,7,-67,15,0,2,2,0,3,get_value_from_dest_reg,Basic testing - SRL
+SRL,0,2,0,0,7,56,4294967295,0,31,2,0,1,get_value_from_dest_reg,Basic testing - SRL
+SRLV,5,2,0,0,9,4034,15,0,0,6,0,3,get_value_from_dest_reg,Basic testing - SRLV
+SRLV,7,3,0,0,8,29279,4294967295,0,0,6,0,1,get_value_from_dest_reg,Basic testing - SRLV
+SRA,0,3,0,0,8,0,3539568303,0,2,3,0,4106117547,get_value_from_dest_reg,Basic testing - SRA
+SRA,0,3,0,0,8,0,1424130120,0,2,3,0,356032530,get_value_from_dest_reg,Basic testing - SRA
+SRA,0,3,0,0,8,0,1424130120,0,31,3,0,0,get_value_from_dest_reg,Basic testing - SRA
+SRAV,10,3,0,0,8,2,3539568303,0,0,7,0,4106117547,get_value_from_dest_reg,Basic testing - SRAV
+SRAV,10,3,0,0,8,2,1424130120,0,0,7,0,356032530,get_value_from_dest_reg,Basic testing - SRAV
+SLTU,11,4,0,0,7,6000,5896,0,0,43,0,0,get_value_from_dest_reg,Basic testing - SLTU
+SLTU,11,4,0,0,7,-34,2,0,0,43,0,0,get_value_from_dest_reg,Basic testing - SLTU
+SLTU,11,4,0,0,7,6,5896,0,0,43,0,1,get_value_from_dest_reg,Basic testing - SLTU
+SLTIU,4,0,-586,0,20,-32,0,11,0,0,0,0,get_value_from_dest_reg,Basic Testing- SLTIU
+SLTIU,4,0,-32,0,20,-586,0,11,0,0,0,1,get_value_from_dest_reg,Basic Testing- SLTIU
+SLTIU,4,0,4567,0,20,34,0,11,0,0,0,1,get_value_from_dest_reg,Basic Testing- SLTIU
+SLTIU,4,0,34,0,15,4567,0,11,0,0,0,0,get_value_from_dest_reg,Basic Testing- SLTIU
+SLTI,4,0,34,0,15,4567,0,10,0,0,0,0,get_value_from_dest_reg,Basic Testing- SLTI
+SLTI,4,0,4567,0,15,34,0,10,0,0,0,1,get_value_from_dest_reg,Basic Testing- SLTI
+SLTI,4,0,-10,0,15,-2,0,10,0,0,0,0,get_value_from_dest_reg,Basic Testing- SLTI
+SLTI,4,0,-2,0,15,-10,0,10,0,0,0,1,get_value_from_dest_reg,Basic Testing- SLTI
+SLT,11,4,0,0,7,6000,5896,0,0,42,0,0,get_value_from_dest_reg,Basic testing - SLT
+SLT,11,4,0,0,7,-89,-1,0,0,42,0,1,get_value_from_dest_reg,Basic testing - SLT
+SLT,11,4,0,0,7,-1,4294967207,0,0,42,0,0,get_value_from_dest_reg,Basic testing - SLT
+SLL,0,2,0,0,7,-67,589,0,5,0,0,18848,get_value_from_dest_reg,Basic testing - SLL
+SLL,0,2,0,0,7,-67,-56,0,15,0,0,-1835008,get_value_from_dest_reg,Basic testing - SLL
+SLLV,7,3,0,0,8,5,589,0,0,4,0,18848,get_value_from_dest_reg,Basic testing - SLLV
+SLLV,7,3,0,0,8,15,-56,0,0,4,0,-1835008,get_value_from_dest_reg,Basic testing - SLLV
+SH,4,0,-9,0,20,89,114599665,41,0,0,0,79,read_half_word_from_memory,Basic Testing- SH - negative offset
+LH,11,0,-9,0,5,89,-900,33,0,0,0,4294944497,get_value_from_dest_reg,Basic Testing - LH - negative offset
+LHU,9,0,-9,0,11,89,-900,37,0,0,0,42737,get_value_from_dest_reg,Basic Testing - LHU - negative offset
+SH,4,0,77,0,21,89,887,41,0,0,8194,79,check_invalid_alignment,Detection of invalid alignement- SH
+LH,11,0,77,0,4,89,-900,33,0,0,8194,0,check_invalid_alignment,Detection of invalid alignement- LH
+LHU,9,0,77,0,11,89,-900,37,0,0,8194,42737,check_invalid_alignment,Detection of invalid alignement- LHU
+SH,4,0,11,0,20,89,5656,41,0,0,0,79,read_half_word_from_memory,Basic Testing- SH - positive offset
+LH,11,0,11,0,16,89,-900,33,0,0,0,5656,get_value_from_dest_reg,Basic Testing - LH - positive offset
+LHU,9,0,11,0,11,89,-900,37,0,0,0,5656,get_value_from_dest_reg,Basic Testing - LHU - positive offset
+ADD,4,5,0,0,0,7,5,0,0,32,0,0,get_value_from_dest_reg,Basic Testing- ADD - Zero reg
+SB,5,0,-9,0,7,109,796536659,40,0,0,0,0,read_byte_from_memory,Basic Testing- SB - negative offset
+LB,10,0,-9,0,5,109,-900,32,0,0,0,83,get_value_from_dest_reg,Basic Testing - LB - negative offset
+LBU,1,0,-9,0,5,109,-900,36,0,0,0,83,get_value_from_dest_reg,Basic Testing - LBU - negative offset
+SB,14,0,11,0,7,129,56789,40,0,0,0,0,read_byte_from_memory,Basic Testing- SB - positive offset
+LB,10,0,11,0,5,129,-900,32,0,0,0,4294967253,get_value_from_dest_reg,Basic Testing - LB - positiveoffset
+LBU,1,0,11,0,5,129,-900,36,0,0,0,213,get_value_from_dest_reg,Basic Testing - LBU - positiveoffset
+SB,14,0,6,0,7,129,56789,40,0,0,8194,0,check_invalid_alignment,Detection of invalid alignment - SB
+LB,10,0,6,0,7,129,-900,32,0,0,8194,0,check_invalid_alignment,Detection of invalid alignment - LB
+LBU,1,0,6,0,5,129,-900,36,0,0,8194,213,check_invalid_alignment,Detection of invalid alignment - LBU
+JALR,7,0,0,0,1,180,0,0,0,9,0,0,check_expected_pc_and_return_address,Basic Testing - JALR
+LUI,0,0,56303,0,4,89,-900,15,0,0,0,3689873408,get_value_from_dest_reg,Basic testing - LUI
+BLTZ,18,0,4,0,0,-100,0,1,0,0,0,0,check_expected_pc,Condition True - BLTZ
+SLL,0,2,0,0,7,-67,-56,0,15,0,0,-1835008,get_value_from_dest_reg,Basic testing - SLL
+SH,4,0,11,0,20,89,5656,41,0,0,0,79,read_half_word_from_memory,Basic Testing- SH - positive offset
+BLTZ,18,0,4,0,0,100,0,1,0,0,0,0,check_UNexpected_pc,Condition False - BLTZ
+BNE,5,0,20,0,4,5,8,5,0,0,0,216,check_expected_pc,Basic testing -Positive offset - BNE
+SUB,4,5,0,0,3,-2147483600,100,0,0,34,8197,0,check_overflow,Overflow Detection (Lower Bound)- SUB
+BGEZAL,15,0,-4,0,17,5,5,1,0,0,0,0,check_expected_pc_and_return_address,NEGATIVE offset - BGEZAL

@@ -1,0 +1,399 @@
+R-Type : dst=3, src1=4, src2=5, shift=0, function=32.
+  instr=00851820
+,PC= 100ADD 3, 4, 5.
+You have passed TestId = 0 - Basic Testing- ADDR-Type : dst=3, src1=4, src2=5, shift=0, function=32.
+  instr=00851820
+,PC= 104ADD 3, 4, 5.
+You have passed TestId = 1 - Basic Testing- ADDR-Type : dst=7, src1=10, src2=8, shift=0, function=32.
+  instr=01483820
+,PC= 108ADD 7, 10, 8.
+mips_ExceptionArithmeticOverflowYou have passed TestId = 2 - Overflow Detection(Upper bound) - ADDR-Type : dst=7, src1=10, src2=8, shift=0, function=32.
+  instr=01483820
+,PC= 108ADD 7, 10, 8.
+mips_ExceptionArithmeticOverflowYou have passed TestId = 3 - Overflow Detection(Lower bound) - ADDI-Type : dst=5, src1=10,immediate=32700.
+  instr=21457fbc
+,PC= 108ADDI 5, 10, 32700.
+mips_ExceptionArithmeticOverflowYou have passed TestId = 4 - Overflow Detection(upper bound) - ADDII-Type : BLTZAL -  dst=16, src1=15,immediate=65532.
+  instr=05f0fffc
+,PC= 108R-Type : dst=0, src1=0, src2=0, shift=0, function=0.
+  instr=00000000
+,PC= 112You have passed TestId = 5 - NEGATIVE offset - BLTZALI-Type : dst=5, src1=10,immediate=32836.
+  instr=21458044
+,PC= 96ADDI 5, 10, 4294934596.
+mips_ExceptionArithmeticOverflowYou have passed TestId = 6 - Overflow Detection(lower bound) - ADDIR-Type : dst=7, src1=10, src2=8, shift=0, function=33.
+  instr=01483821
+,PC= 96ADDU 7, 10, 8.
+You have passed TestId = 7 - IGNORE Overflow(Upper bound) - ADDUR-Type : dst=7, src1=10, src2=8, shift=0, function=33.
+  instr=01483821
+,PC= 100ADDU 7, 10, 8.
+You have passed TestId = 8 - IGNORE Overflow(Lower bound)   - ADDUR-Type : dst=6, src1=1, src2=23, shift=0, function=33.
+  instr=00373021
+,PC= 104ADDU 6, 1, 23.
+You have passed TestId = 9 - Basic Testing - ADDUI-Type : BEQ -  dst=4, src1=5,immediate=65534.
+  instr=10a4fffe
+,PC= 108R-Type : dst=0, src1=0, src2=0, shift=0, function=0.
+  instr=00000000
+,PC= 112You have passed TestId = 10 - NEGATIVEOffset Testing - BEQI-Type : dst=5, src1=10,immediate=32700.
+  instr=25457fbc
+,PC= 104ADDIU 5, 10, 32700.
+You have passed TestId = 11 - IGNORE Overflow(Upper bound) - ADDIUI-Type : dst=5, src1=10,immediate=32836.
+  instr=25458044
+,PC= 108ADDIU 5, 10, 4294934596.
+You have passed TestId = 12 - IGNORE Overflow(Lower bound) - ADDIUR-Type : dst=7, src1=10, src2=4, shift=0, function=36.
+  instr=01443824
+,PC= 112You have passed TestId = 13 - Basic testing - ANDI-Type : dst=5, src1=10,immediate=40234.
+  instr=31459d2a
+,PC= 116You have passed TestId = 14 - Basic Testing - ANDII-Type : BEQ -  dst=4, src1=5,immediate=20.
+  instr=10a40014
+,PC= 120R-Type : dst=0, src1=0, src2=0, shift=0, function=0.
+  instr=00000000
+,PC= 124You have passed TestId = 15 - POSITIVE Offset Testing - BEQR-Type : dst=9, src1=3, src2=17, shift=0, function=37.
+  instr=00714825
+,PC= 204You have passed TestId = 16 - Basic Testing- ORI-Type : dst=5, src1=10,immediate=65535.
+  instr=3545ffff
+,PC= 208You have passed TestId = 17 - Basic Testing- ORII-Type : BGEZ -  dst=1, src1=0,immediate=100.
+  instr=04010064
+,PC= 212R-Type : dst=0, src1=0, src2=0, shift=0, function=0.
+  instr=00000000
+,PC= 216You have passed TestId = 18 - POSITIVE offset - BGEZR-Type : dst=3, src1=4, src2=5, shift=0, function=32.
+  instr=00851820
+,PC= 616ADD 3, 4, 5.
+You have passed TestId = 19 - Basic Testing- ADDR-Type : dst=7, src1=10, src2=4, shift=0, function=36.
+  instr=01443824
+,PC= 620You have passed TestId = 20 - Basic testing - ANDI-Type : BEQ -  dst=4, src1=5,immediate=20.
+  instr=10a40014
+,PC= 624R-Type : dst=0, src1=0, src2=0, shift=0, function=0.
+  instr=00000000
+,PC= 628You have passed TestId = 21 - Condition False - BEQR-Type : dst=7, src1=10, src2=4, shift=0, function=36.
+  instr=01443824
+,PC= 632You have passed TestId = 22 - Basic testing - ANDR-Type : dst=7, src1=10, src2=4, shift=0, function=36.
+  instr=01443824
+,PC= 636You have passed TestId = 23 - Basic testing - ANDR-Type : dst=20, src1=4, src2=5, shift=0, function=38.
+  instr=0085a026
+,PC= 640You have passed TestId = 24 - Basic Testing- XORI-Type : BGTZ -  dst=0, src1=18,immediate=4.
+  instr=1e400004
+,PC= 644R-Type : dst=0, src1=0, src2=0, shift=0, function=0.
+  instr=00000000
+,PC= 648You have passed TestId = 25 - Condition True - BGTZI-Type : dst=20, src1=4,immediate=65090.
+  instr=3894fe42
+,PC= 664You have passed TestId = 26 - Basic Testing- XORII-Type : BEQ -  dst=4, src1=5,immediate=20.
+  instr=10a40014
+,PC= 668R-Type : dst=0, src1=0, src2=0, shift=0, function=0.
+  instr=00000000
+,PC= 672You have passed TestId = 27 - POSITIVE Offset Testing - BEQI-Type : BLEZ -  dst=0, src1=15,immediate=100.
+  instr=19e00064
+,PC= 676R-Type : dst=0, src1=0, src2=0, shift=0, function=0.
+  instr=00000000
+,PC= 680You have passed TestId = 28 - Condition False - BLEZJ-Type : dst=0, src1=0,immediate=0.
+  instr=08000005
+,PC= 684R-Type : dst=0, src1=0, src2=0, shift=0, function=0.
+  instr=00000000
+,PC= 688You have passed TestId = 29 - Basic Testing - JUMPR-Type : dst=3, src1=4, src2=5, shift=0, function=35.
+  instr=00851823
+,PC= 20You have passed TestId = 30 - Basic Testing- SUBUR-Type : dst=3, src1=4, src2=5, shift=0, function=35.
+  instr=00851823
+,PC= 24You have passed TestId = 31 - Basic Testing- SUBUI-Type : BNE -  dst=4, src1=5,immediate=20.
+  instr=14a40014
+,PC= 28R-Type : dst=0, src1=0, src2=0, shift=0, function=0.
+  instr=00000000
+,PC= 32You have passed TestId = 32 - Condition False - BNER-Type : dst=3, src1=4, src2=5, shift=0, function=35.
+  instr=00851823
+,PC= 36You have passed TestId = 33 - Basic Testing- SUBUJ-Type : dst=0, src1=0,immediate=0.
+  instr=0c00000a
+,PC= 40R-Type : dst=0, src1=0, src2=0, shift=0, function=0.
+  instr=00000000
+,PC= 44You have passed TestId = 34 - Basic Testing - JALR-Type : dst=0, src1=7, src2=0, shift=0, function=8.
+  instr=00e00008
+,PC= 40R-Type : dst=0, src1=0, src2=0, shift=0, function=0.
+  instr=00000000
+,PC= 44You have passed TestId = 35 - Basic Testing - JRI-Type : dst=20, src1=4,immediate=65527.
+  instr=ac94fff7
+,PC= 560I-Type : dst=20, src1=4,immediate=65527.
+  instr=ac94fff7
+,PC= 560You have passed TestId = 36 - Basic Testing-SW - Negative offsetI-Type : dst=5, src1=10,immediate=65527.
+  instr=8d45fff7
+,PC= 564You have passed TestId = 37 - Basic Testing - LW - Negative offsetI-Type : dst=20, src1=5,immediate=10.
+  instr=acb4000a
+,PC= 568mips_ExceptionInvalidAlignmentYou have passed TestId = 38 - Detection of invalid alignement- SWI-Type : dst=5, src1=10,immediate=10.
+  instr=8d45000a
+,PC= 568mips_ExceptionInvalidAlignmentYou have passed TestId = 39 - Detection of invalid alignement- LWI-Type : dst=20, src1=4,immediate=11.
+  instr=ac94000b
+,PC= 568I-Type : dst=20, src1=4,immediate=11.
+  instr=ac94000b
+,PC= 568You have passed TestId = 40 - Basic Testing- SW - Positive offsetI-Type : dst=5, src1=10,immediate=11.
+  instr=8d45000b
+,PC= 572You have passed TestId = 41 - Basic Testing - LW - Positive offsetR-Type : dst=3, src1=4, src2=5, shift=0, function=34.
+  instr=00851822
+,PC= 576You have passed TestId = 42 - Basic Testing- SUBR-Type : dst=3, src1=4, src2=5, shift=0, function=34.
+  instr=00851822
+,PC= 580mips_ExceptionArithmeticOverflowYou have passed TestId = 43 - Overflow Detection (Upper Bound)- SUBR-Type : dst=3, src1=4, src2=5, shift=0, function=35.
+  instr=00851823
+,PC= 580You have passed TestId = 44 - IGNORE Overflow - SUBUR-Type : dst=7, src1=0, src2=2, shift=2, function=2.
+  instr=00023882
+,PC= 584You have passed TestId = 45 - Basic testing - SRLR-Type : dst=7, src1=0, src2=2, shift=31, function=2.
+  instr=00023fc2
+,PC= 588You have passed TestId = 46 - Basic testing - SRLR-Type : dst=9, src1=5, src2=2, shift=0, function=6.
+  instr=00a24806
+,PC= 592You have passed TestId = 47 - Basic testing - SRLVR-Type : dst=8, src1=7, src2=3, shift=0, function=6.
+  instr=00e34006
+,PC= 596You have passed TestId = 48 - Basic testing - SRLVR-Type : dst=8, src1=0, src2=3, shift=2, function=3.
+  instr=00034083
+,PC= 600You have passed TestId = 49 - Basic testing - SRAR-Type : dst=8, src1=0, src2=3, shift=2, function=3.
+  instr=00034083
+,PC= 604You have passed TestId = 50 - Basic testing - SRAR-Type : dst=8, src1=0, src2=3, shift=31, function=3.
+  instr=000347c3
+,PC= 608You have passed TestId = 51 - Basic testing - SRAR-Type : dst=8, src1=10, src2=3, shift=0, function=7.
+  instr=01434007
+,PC= 612You have passed TestId = 52 - Basic testing - SRAVR-Type : dst=8, src1=10, src2=3, shift=0, function=7.
+  instr=01434007
+,PC= 616You have passed TestId = 53 - Basic testing - SRAVR-Type : dst=7, src1=11, src2=4, shift=0, function=43.
+  instr=0164382b
+,PC= 620You have passed TestId = 54 - Basic testing - SLTUR-Type : dst=7, src1=11, src2=4, shift=0, function=43.
+  instr=0164382b
+,PC= 624You have passed TestId = 55 - Basic testing - SLTUR-Type : dst=7, src1=11, src2=4, shift=0, function=43.
+  instr=0164382b
+,PC= 628You have passed TestId = 56 - Basic testing - SLTUI-Type : dst=20, src1=4,immediate=64950.
+  instr=2c94fdb6
+,PC= 632You have passed TestId = 57 - Basic Testing- SLTIUI-Type : dst=20, src1=4,immediate=65504.
+  instr=2c94ffe0
+,PC= 636You have passed TestId = 58 - Basic Testing- SLTIUI-Type : dst=20, src1=4,immediate=4567.
+  instr=2c9411d7
+,PC= 640You have passed TestId = 59 - Basic Testing- SLTIUI-Type : dst=15, src1=4,immediate=34.
+  instr=2c8f0022
+,PC= 644You have passed TestId = 60 - Basic Testing- SLTIUI-Type : dst=15, src1=4,immediate=34.
+  instr=288f0022
+,PC= 648You have passed TestId = 61 - Basic Testing- SLTII-Type : dst=15, src1=4,immediate=4567.
+  instr=288f11d7
+,PC= 652You have passed TestId = 62 - Basic Testing- SLTII-Type : dst=15, src1=4,immediate=65526.
+  instr=288ffff6
+,PC= 656You have passed TestId = 63 - Basic Testing- SLTII-Type : dst=15, src1=4,immediate=65534.
+  instr=288ffffe
+,PC= 660You have passed TestId = 64 - Basic Testing- SLTIR-Type : dst=7, src1=11, src2=4, shift=0, function=42.
+  instr=0164382a
+,PC= 664You have passed TestId = 65 - Basic testing - SLTR-Type : dst=7, src1=11, src2=4, shift=0, function=42.
+  instr=0164382a
+,PC= 668You have passed TestId = 66 - Basic testing - SLTR-Type : dst=7, src1=11, src2=4, shift=0, function=42.
+  instr=0164382a
+,PC= 672You have passed TestId = 67 - Basic testing - SLTR-Type : dst=7, src1=0, src2=2, shift=5, function=0.
+  instr=00023940
+,PC= 676You have passed TestId = 68 - Basic testing - SLLR-Type : dst=7, src1=0, src2=2, shift=15, function=0.
+  instr=00023bc0
+,PC= 680You have passed TestId = 69 - Basic testing - SLLR-Type : dst=8, src1=7, src2=3, shift=0, function=4.
+  instr=00e34004
+,PC= 684You have passed TestId = 70 - Basic testing - SLLVR-Type : dst=8, src1=7, src2=3, shift=0, function=4.
+  instr=00e34004
+,PC= 688You have passed TestId = 71 - Basic testing - SLLVI-Type : dst=20, src1=4,immediate=65527.
+  instr=a494fff7
+,PC= 692I-Type : dst=20, src1=4,immediate=65527.
+  instr=a494fff7
+,PC= 692You have passed TestId = 72 - Basic Testing- SH - negative offsetI-Type : dst=5, src1=11,immediate=65527.
+  instr=8565fff7
+,PC= 696You have passed TestId = 73 - Basic Testing - LH - negative offsetI-Type : dst=11, src1=9,immediate=65527.
+  instr=952bfff7
+,PC= 700You have passed TestId = 74 - Basic Testing - LHU - negative offsetI-Type : dst=21, src1=4,immediate=77.
+  instr=a495004d
+,PC= 704mips_ExceptionInvalidAlignmentYou have passed TestId = 75 - Detection of invalid alignement- SHI-Type : dst=4, src1=11,immediate=77.
+  instr=8564004d
+,PC= 704mips_ExceptionInvalidAlignmentYou have passed TestId = 76 - Detection of invalid alignement- LHI-Type : dst=11, src1=9,immediate=77.
+  instr=952b004d
+,PC= 704mips_ExceptionInvalidAlignmentYou have passed TestId = 77 - Detection of invalid alignement- LHUI-Type : dst=20, src1=4,immediate=11.
+  instr=a494000b
+,PC= 704I-Type : dst=20, src1=4,immediate=11.
+  instr=a494000b
+,PC= 704You have passed TestId = 78 - Basic Testing- SH - positive offsetI-Type : dst=16, src1=11,immediate=11.
+  instr=8570000b
+,PC= 708You have passed TestId = 79 - Basic Testing - LH - positive offsetI-Type : dst=11, src1=9,immediate=11.
+  instr=952b000b
+,PC= 712You have passed TestId = 80 - Basic Testing - LHU - positive offsetR-Type : dst=0, src1=4, src2=5, shift=0, function=32.
+  instr=00850020
+,PC= 716ADD 0, 4, 5.
+You have passed TestId = 81 - Basic Testing- ADD - Zero regI-Type : dst=7, src1=5,immediate=65527.
+  instr=a0a7fff7
+,PC= 720I-Type : dst=7, src1=5,immediate=65527.
+  instr=a0a7fff7
+,PC= 720You have passed TestId = 82 - Basic Testing- SB - negative offsetI-Type : dst=5, src1=10,immediate=65527.
+  instr=8145fff7
+,PC= 724You have passed TestId = 83 - Basic Testing - LB - negative offsetI-Type : dst=5, src1=1,immediate=65527.
+  instr=9025fff7
+,PC= 728You have passed TestId = 84 - Basic Testing - LBU - negative offsetI-Type : dst=7, src1=14,immediate=11.
+  instr=a1c7000b
+,PC= 732I-Type : dst=7, src1=14,immediate=11.
+  instr=a1c7000b
+,PC= 732You have passed TestId = 85 - Basic Testing- SB - positive offsetI-Type : dst=5, src1=10,immediate=11.
+  instr=8145000b
+,PC= 736You have passed TestId = 86 - Basic Testing - LB - positiveoffsetI-Type : dst=5, src1=1,immediate=11.
+  instr=9025000b
+,PC= 740You have passed TestId = 87 - Basic Testing - LBU - positiveoffsetI-Type : dst=7, src1=14,immediate=6.
+  instr=a1c70006
+,PC= 744mips_ExceptionInvalidAlignmentYou have passed TestId = 88 - Detection of invalid alignment - SBI-Type : dst=7, src1=10,immediate=6.
+  instr=81470006
+,PC= 744mips_ExceptionInvalidAlignmentYou have passed TestId = 89 - Detection of invalid alignment - LBI-Type : dst=5, src1=1,immediate=6.
+  instr=90250006
+,PC= 744mips_ExceptionInvalidAlignmentYou have passed TestId = 90 - Detection of invalid alignment - LBUR-Type : dst=1, src1=7, src2=0, shift=0, function=9.
+  instr=00e00809
+,PC= 744R-Type : dst=0, src1=0, src2=0, shift=0, function=0.
+  instr=00000000
+,PC= 748You have passed TestId = 91 - Basic Testing - JALRYou have passed TestId = 92 - Basic testing - LUII-Type : BLTZ -  dst=0, src1=18,immediate=4.
+  instr=06400004
+,PC= 184R-Type : dst=0, src1=0, src2=0, shift=0, function=0.
+  instr=00000000
+,PC= 188You have passed TestId = 93 - Condition True - BLTZR-Type : dst=7, src1=0, src2=2, shift=15, function=0.
+  instr=00023bc0
+,PC= 204You have passed TestId = 94 - Basic testing - SLLI-Type : dst=20, src1=4,immediate=11.
+  instr=a494000b
+,PC= 208I-Type : dst=20, src1=4,immediate=11.
+  instr=a494000b
+,PC= 208You have passed TestId = 95 - Basic Testing- SH - positive offsetI-Type : BLTZ -  dst=0, src1=18,immediate=4.
+  instr=06400004
+,PC= 212R-Type : dst=0, src1=0, src2=0, shift=0, function=0.
+  instr=00000000
+,PC= 216You have passed TestId = 96 - Condition False - BLTZI-Type : BNE -  dst=4, src1=5,immediate=20.
+  instr=14a40014
+,PC= 220R-Type : dst=0, src1=0, src2=0, shift=0, function=0.
+  instr=00000000
+,PC= 224You have passed TestId = 97 - Basic testing -Positive offset - BNER-Type : dst=3, src1=4, src2=5, shift=0, function=34.
+  instr=00851822
+,PC= 304mips_ExceptionArithmeticOverflowYou have passed TestId = 98 - Overflow Detection (Lower Bound)- SUBI-Type : BGEZAL -  dst=17, src1=15,immediate=65532.
+  instr=05f1fffc
+,PC= 304R-Type : dst=0, src1=0, src2=0, shift=0, function=0.
+  instr=00000000
+,PC= 308You have passed TestId = 99 - NEGATIVE offset - BGEZALR-Type : dst=0, src1=3, src2=17, shift=0, function=26.
+  instr=0071001a
+,PC= 292R-Type : dst=8, src1=0, src2=0, shift=0, function=16.
+  instr=00004010
+,PC= 296R-Type : dst=9, src1=0, src2=0, shift=0, function=18.
+  instr=00004812
+,PC= 300You have passed TestId = 100 - basic testing DIVR-Type : dst=0, src1=3, src2=17, shift=0, function=27.
+  instr=0071001b
+,PC= 304R-Type : dst=8, src1=0, src2=0, shift=0, function=16.
+  instr=00004010
+,PC= 308R-Type : dst=9, src1=0, src2=0, shift=0, function=18.
+  instr=00004812
+,PC= 312You have passed TestId = 101 - basic testing DIVUR-Type : dst=0, src1=3, src2=0, shift=0, function=17.
+  instr=00600011
+,PC= 316R-Type : dst=8, src1=0, src2=0, shift=0, function=16.
+  instr=00004010
+,PC= 320You have passed TestId = 102 - basic testing MTHIR-Type : dst=8, src1=0, src2=0, shift=0, function=16.
+  instr=00004010
+,PC= 324You have passed TestId = 103 - basic testing MFHIR-Type : dst=0, src1=3, src2=0, shift=0, function=19.
+  instr=00600013
+,PC= 328R-Type : dst=9, src1=0, src2=0, shift=0, function=18.
+  instr=00004812
+,PC= 332You have passed TestId = 104 - basic testing MTLOR-Type : dst=7, src1=0, src2=0, shift=0, function=18.
+  instr=00003812
+,PC= 336You have passed TestId = 105 - basic testing MFLO
+| Instruction |  tests | passed | success |
++-------------+--------+--------+---------+
+|         ADD |      6 |      6 |  100.0 |
+|        ADDI |      2 |      2 |  100.0 |
+|       ADDIU |      2 |      2 |  100.0 |
+|        ADDU |      3 |      3 |  100.0 |
+|         AND |      4 |      4 |  100.0 |
+|        ANDI |      1 |      1 |  100.0 |
+|         BEQ |      4 |      4 |  100.0 |
+|        BGEZ |      1 |      1 |  100.0 |
+|      BGEZAL |      1 |      1 |  100.0 |
+|        BGTZ |      1 |      1 |  100.0 |
+|        BLEZ |      1 |      1 |  100.0 |
+|        BLTZ |      2 |      2 |  100.0 |
+|      BLTZAL |      1 |      1 |  100.0 |
+|         BNE |      2 |      2 |  100.0 |
+|         DIV |      1 |      1 |  100.0 |
+|        DIVU |      1 |      1 |  100.0 |
+|           J |      1 |      1 |  100.0 |
+|         JAL |      1 |      1 |  100.0 |
+|        JALR |      1 |      1 |  100.0 |
+|          JR |      1 |      1 |  100.0 |
+|          LB |      3 |      3 |  100.0 |
+|         LBU |      3 |      3 |  100.0 |
+|          LH |      3 |      3 |  100.0 |
+|         LHU |      3 |      3 |  100.0 |
+|         LUI |      1 |      1 |  100.0 |
+|          LW |      3 |      3 |  100.0 |
+|        MFHI |      1 |      1 |  100.0 |
+|        MFLO |      1 |      1 |  100.0 |
+|        MTHI |      1 |      1 |  100.0 |
+|        MTLO |      1 |      1 |  100.0 |
+|          OR |      1 |      1 |  100.0 |
+|         ORI |      1 |      1 |  100.0 |
+|          SB |      3 |      3 |  100.0 |
+|          SH |      4 |      4 |  100.0 |
+|         SLL |      3 |      3 |  100.0 |
+|        SLLV |      2 |      2 |  100.0 |
+|         SLT |      3 |      3 |  100.0 |
+|        SLTI |      4 |      4 |  100.0 |
+|       SLTIU |      4 |      4 |  100.0 |
+|        SLTU |      3 |      3 |  100.0 |
+|         SRA |      3 |      3 |  100.0 |
+|        SRAV |      2 |      2 |  100.0 |
+|         SRL |      2 |      2 |  100.0 |
+|        SRLV |      2 |      2 |  100.0 |
+|         SUB |      3 |      3 |  100.0 |
+|        SUBU |      4 |      4 |  100.0 |
+|          SW |      3 |      3 |  100.0 |
+|         XOR |      1 |      1 |  100.0 |
+|        XORI |      1 |      1 |  100.0 |
++-------------+--------+--------+---------+---------+
+
+Total instructions tested:  49
+Fully working :             49 (100.0%)
+Partially working :          0 (  0.0%)
+Not working at all :         0 (  0.0%)
+
+| Instruction |  tests | passed | success |
++-------------+--------+--------+---------+
+|         ADD |      6 |      6 |  100.0 |
+|        ADDI |      2 |      2 |  100.0 |
+|       ADDIU |      2 |      2 |  100.0 |
+|        ADDU |      3 |      3 |  100.0 |
+|         AND |      4 |      4 |  100.0 |
+|        ANDI |      1 |      1 |  100.0 |
+|         BEQ |      4 |      4 |  100.0 |
+|        BGEZ |      1 |      1 |  100.0 |
+|      BGEZAL |      1 |      1 |  100.0 |
+|        BGTZ |      1 |      1 |  100.0 |
+|        BLEZ |      1 |      1 |  100.0 |
+|        BLTZ |      2 |      2 |  100.0 |
+|      BLTZAL |      1 |      1 |  100.0 |
+|         BNE |      2 |      2 |  100.0 |
+|         DIV |      1 |      1 |  100.0 |
+|        DIVU |      1 |      1 |  100.0 |
+|           J |      1 |      1 |  100.0 |
+|         JAL |      1 |      1 |  100.0 |
+|        JALR |      1 |      1 |  100.0 |
+|          JR |      1 |      1 |  100.0 |
+|          LB |      3 |      3 |  100.0 |
+|         LBU |      3 |      3 |  100.0 |
+|          LH |      3 |      3 |  100.0 |
+|         LHU |      3 |      3 |  100.0 |
+|         LUI |      1 |      1 |  100.0 |
+|          LW |      3 |      3 |  100.0 |
+|        MFHI |      1 |      1 |  100.0 |
+|        MFLO |      1 |      1 |  100.0 |
+|        MTHI |      1 |      1 |  100.0 |
+|        MTLO |      1 |      1 |  100.0 |
+|          OR |      1 |      1 |  100.0 |
+|         ORI |      1 |      1 |  100.0 |
+|          SB |      3 |      3 |  100.0 |
+|          SH |      4 |      4 |  100.0 |
+|         SLL |      3 |      3 |  100.0 |
+|        SLLV |      2 |      2 |  100.0 |
+|         SLT |      3 |      3 |  100.0 |
+|        SLTI |      4 |      4 |  100.0 |
+|       SLTIU |      4 |      4 |  100.0 |
+|        SLTU |      3 |      3 |  100.0 |
+|         SRA |      3 |      3 |  100.0 |
+|        SRAV |      2 |      2 |  100.0 |
+|         SRL |      2 |      2 |  100.0 |
+|        SRLV |      2 |      2 |  100.0 |
+|         SUB |      3 |      3 |  100.0 |
+|        SUBU |      4 |      4 |  100.0 |
+|          SW |      3 |      3 |  100.0 |
+|         XOR |      1 |      1 |  100.0 |
+|        XORI |      1 |      1 |  100.0 |
++-------------+--------+--------+---------+---------+
+
+Total instructions tested:  49
+Fully working :             49 (100.0%)
+Partially working :          0 (  0.0%)
+Not working at all :         0 (  0.0%)

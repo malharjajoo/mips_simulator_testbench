@@ -1,0 +1,322 @@
+       0 : 00851820 R-Type add
+You have passed TestId = 0 - Basic Testing- ADD       4 : 00851820 R-Type add
+You have passed TestId = 1 - Basic Testing- ADD       8 : 01483820 R-Type add
+    overflow, s=2147480000, t=32700
+mips_ExceptionArithmeticOverflowYou have passed TestId = 2 - Overflow Detection(Upper bound) - ADD       c : 01483820 R-Type add
+    overflow, s=-2147476000, t=-32700
+mips_ExceptionArithmeticOverflowYou have passed TestId = 3 - Overflow Detection(Lower bound) - ADD      10 : 21457fbc I-Type addi
+mips_ExceptionArithmeticOverflowYou have passed TestId = 4 - Overflow Detection(upper bound) - ADDI      14 : 05f0fffc I-Type bltzal  new pcN=8
+      18 : 00000000 R-Type sll
+You have passed TestId = 5 - NEGATIVE offset - BLTZAL       8 : 21458044 I-Type addi
+mips_ExceptionArithmeticOverflowYou have passed TestId = 6 - Overflow Detection(lower bound) - ADDI       c : 01483821 R-Type addu, $7 = $8 + $10
+You have passed TestId = 7 - IGNORE Overflow(Upper bound) - ADDU      10 : 01483821 R-Type addu, $7 = $8 + $10
+You have passed TestId = 8 - IGNORE Overflow(Lower bound)   - ADDU      14 : 00373021 R-Type addu, $6 = $23 + $1
+You have passed TestId = 9 - Basic Testing - ADDU      18 : 10a4fffe I-Type beq
+  new pcN=14
+      1c : 00000000 R-Type sll
+You have passed TestId = 10 - NEGATIVEOffset Testing - BEQ      14 : 25457fbc I-Type addiu
+You have passed TestId = 11 - IGNORE Overflow(Upper bound) - ADDIU      18 : 25458044 I-Type addiu
+You have passed TestId = 12 - IGNORE Overflow(Lower bound) - ADDIU      1c : 01443824 R-Type and
+You have passed TestId = 13 - Basic testing - AND      20 : 31459d2a I-Type andi
+You have passed TestId = 14 - Basic Testing - ANDI      24 : 10a40014 I-Type beq
+  new pcN=78
+      28 : 00000000 R-Type sll
+You have passed TestId = 15 - POSITIVE Offset Testing - BEQ      78 : 00714825 R-Type or
+You have passed TestId = 16 - Basic Testing- OR      7c : 3545ffff I-Type oriYou have passed TestId = 17 - Basic Testing- ORI      80 : 04010064 I-Type bgez, n  new pcN=214
+      84 : 00000000 R-Type sll
+You have passed TestId = 18 - POSITIVE offset - BGEZ     214 : 00851820 R-Type add
+You have passed TestId = 19 - Basic Testing- ADD     218 : 01443824 R-Type and
+You have passed TestId = 20 - Basic testing - AND     21c : 10a40014 I-Type beq
+     220 : 00000000 R-Type sll
+You have passed TestId = 21 - Condition False - BEQ     224 : 01443824 R-Type and
+You have passed TestId = 22 - Basic testing - AND     228 : 01443824 R-Type and
+You have passed TestId = 23 - Basic testing - AND     22c : 0085a026 R-Type xor
+You have passed TestId = 24 - Basic Testing- XOR     230 : 1e400004 I-Type bgtz  new pcN=244
+     234 : 00000000 R-Type sll
+You have passed TestId = 25 - Condition True - BGTZ     244 : 3894fe42 I-Type xoriYou have passed TestId = 26 - Basic Testing- XORI     248 : 10a40014 I-Type beq
+     24c : 00000000 R-Type sll
+You have passed TestId = 27 - POSITIVE Offset Testing - BEQ     250 : 19e00064 I-Type blez  not taken.
+     254 : 00000000 R-Type sll
+You have passed TestId = 28 - Condition False - BLEZ     258 : 08000005 J-Type j
+     25c : 00000000 R-Type sll
+You have passed TestId = 29 - Basic Testing - JUMP      14 : 00851823 R-Type subu
+You have passed TestId = 30 - Basic Testing- SUBU      18 : 00851823 R-Type subu
+You have passed TestId = 31 - Basic Testing- SUBU      1c : 14a40014 I-Type bne
+      20 : 31459d2a I-Type andi
+You have passed TestId = 32 - Condition False - BNE      24 : 00851823 R-Type subu
+You have passed TestId = 33 - Basic Testing- SUBU      28 : 0c00000a J-Type jal
+      2c : 00000000 R-Type sll
+You have passed TestId = 34 - Basic Testing - JAL      28 : 00e00008 R-Type jr  pcN=230, src=7
+      2c : 00000000 R-Type sll
+You have passed TestId = 35 - Basic Testing - JR     230 : ac94fff7 I-Type sw [0x50], 0xe8030000
+You have passed TestId = 36 - Basic Testing-SW - Negative offset     234 : 8d45fff7 I-Type lw $5, [0x50]
+You have passed TestId = 37 - Basic Testing - LW - Negative offset     238 : acb4000a I-Type sw [0x63], 0x20030000
+mips_ExceptionInvalidAlignmentYou have passed TestId = 38 - Detection of invalid alignement- SW     23c : 8d45000a I-Type lw $5, [0x63]
+mips_ExceptionInvalidAlignmentYou have passed TestId = 39 - Detection of invalid alignement- LW     240 : ac94000b I-Type sw [0x320], 0x58020000
+You have passed TestId = 40 - Basic Testing- SW - Positive offset     244 : 8d45000b I-Type lw $5, [0x320]
+You have passed TestId = 41 - Basic Testing - LW - Positive offset     248 : 00851822 R-Type sub
+You have passed TestId = 42 - Basic Testing- SUB     24c : 00851822 R-Type sub
+    overflow, s=2147483600, t=-100
+mips_ExceptionArithmeticOverflowYou have passed TestId = 43 - Overflow Detection (Upper Bound)- SUB     250 : 00851823 R-Type subu
+You have passed TestId = 44 - IGNORE Overflow - SUBU     254 : 00023882 R-Type srl
+You have passed TestId = 45 - Basic testing - SRL     258 : 00023fc2 R-Type srl
+You have passed TestId = 46 - Basic testing - SRL     25c : 00a24806 R-Type srlv
+You have passed TestId = 47 - Basic testing - SRLV     260 : 00e34006 R-Type srlv
+You have passed TestId = 48 - Basic testing - SRLV     264 : 00034083 R-Type sra
+You have passed TestId = 49 - Basic testing - SRA     268 : 00034083 R-Type sra
+You have passed TestId = 50 - Basic testing - SRA     26c : 000347c3 R-Type sra
+You have passed TestId = 51 - Basic testing - SRA     270 : 01434007 R-Type uknown fncode 7mips_ExceptionInvalidInstruction##########################################################################################################################
+Failed test 52 for SRAV : msg= Basic testing - SRAV
+
+
+You have failed TestId = 52 - Basic testing - SRAV     274 : 01434007 R-Type uknown fncode 7mips_ExceptionInvalidInstruction##########################################################################################################################
+Failed test 53 for SRAV : msg= Basic testing - SRAV
+
+
+You have failed TestId = 53 - Basic testing - SRAV     278 : 0164382b R-Type sltu
+You have passed TestId = 54 - Basic testing - SLTU     27c : 0164382b R-Type sltu
+You have passed TestId = 55 - Basic testing - SLTU     280 : 0164382b R-Type sltu
+You have passed TestId = 56 - Basic testing - SLTU     284 : 2c94fdb6 I-Type sltiu
+You have passed TestId = 57 - Basic Testing- SLTIU     288 : 2c94ffe0 I-Type sltiu
+You have passed TestId = 58 - Basic Testing- SLTIU     28c : 2c9411d7 I-Type sltiu
+You have passed TestId = 59 - Basic Testing- SLTIU     290 : 2c8f0022 I-Type sltiu
+You have passed TestId = 60 - Basic Testing- SLTIU     294 : 288f0022 I-Type sltiYou have passed TestId = 61 - Basic Testing- SLTI     298 : 288f11d7 I-Type sltiYou have passed TestId = 62 - Basic Testing- SLTI     29c : 288ffff6 I-Type sltiYou have passed TestId = 63 - Basic Testing- SLTI     2a0 : 288ffffe I-Type sltiYou have passed TestId = 64 - Basic Testing- SLTI     2a4 : 0164382a R-Type slt
+You have passed TestId = 65 - Basic testing - SLT     2a8 : 0164382a R-Type slt
+You have passed TestId = 66 - Basic testing - SLT     2ac : 0164382a R-Type slt
+You have passed TestId = 67 - Basic testing - SLT     2b0 : 00023940 R-Type sll
+You have passed TestId = 68 - Basic testing - SLL     2b4 : 00023bc0 R-Type sll
+You have passed TestId = 69 - Basic testing - SLL     2b8 : 00e34004 R-Type sllv
+You have passed TestId = 70 - Basic testing - SLLV     2bc : 00e34004 R-Type sllv
+You have passed TestId = 71 - Basic testing - SLLV     2c0 : a494fff7 I-Type sh
+##########################################################################################################################
+Failed test 72 for SH : msg= Basic Testing- SH - negative offset
+
+
+You have failed TestId = 72 - Basic Testing- SH - negative offset     2c4 : 8565fff7 I-Type lh
+mips_ExceptionInvalidAlignment##########################################################################################################################
+Failed test 73 for LH : msg= Basic Testing - LH - negative offset
+
+
+You have failed TestId = 73 - Basic Testing - LH - negative offset     2c8 : 952bfff7 I-Type lhu
+mips_ExceptionInvalidAlignment##########################################################################################################################
+Failed test 74 for LHU : msg= Basic Testing - LHU - negative offset
+
+
+You have failed TestId = 74 - Basic Testing - LHU - negative offset     2cc : a495004d I-Type sh
+##########################################################################################################################
+Failed test 75 for SH : msg= Detection of invalid alignement- SH
+
+
+You have failed TestId = 75 - Detection of invalid alignement- SH     2d0 : 8564004d I-Type lh
+mips_ExceptionInvalidAlignmentYou have passed TestId = 76 - Detection of invalid alignement- LH     2d4 : 952b004d I-Type lhu
+mips_ExceptionInvalidAlignmentYou have passed TestId = 77 - Detection of invalid alignement- LHU     2d8 : a494000b I-Type sh
+##########################################################################################################################
+Failed test 78 for SH : msg= Basic Testing- SH - positive offset
+
+
+You have failed TestId = 78 - Basic Testing- SH - positive offset     2dc : 8570000b I-Type lh
+mips_ExceptionInvalidAlignment##########################################################################################################################
+Failed test 79 for LH : msg= Basic Testing - LH - positive offset
+
+
+You have failed TestId = 79 - Basic Testing - LH - positive offset     2e0 : 952b000b I-Type lhu
+mips_ExceptionInvalidAlignment##########################################################################################################################
+Failed test 80 for LHU : msg= Basic Testing - LHU - positive offset
+
+
+You have failed TestId = 80 - Basic Testing - LHU - positive offset     2e4 : 00850020 R-Type add
+You have passed TestId = 81 - Basic Testing- ADD - Zero reg     2e8 : a0a7fff7 I-Type sb
+##########################################################################################################################
+Failed test 82 for SB : msg= Basic Testing- SB - negative offset
+
+
+You have failed TestId = 82 - Basic Testing- SB - negative offset     2ec : 8145fff7 I-Type lb
+You have passed TestId = 83 - Basic Testing - LB - negative offset     2f0 : 9025fff7 I-Type lbu
+You have passed TestId = 84 - Basic Testing - LBU - negative offset     2f4 : a1c7000b I-Type sb
+##########################################################################################################################
+Failed test 85 for SB : msg= Basic Testing- SB - positive offset
+
+
+You have failed TestId = 85 - Basic Testing- SB - positive offset     2f8 : 8145000b I-Type lb
+You have passed TestId = 86 - Basic Testing - LB - positiveoffset     2fc : 9025000b I-Type lbu
+You have passed TestId = 87 - Basic Testing - LBU - positiveoffset     300 : a1c70006 I-Type sb
+##########################################################################################################################
+Failed test 88 for SB : msg= Detection of invalid alignment - SB
+
+
+You have failed TestId = 88 - Detection of invalid alignment - SB     304 : 81470006 I-Type lb
+##########################################################################################################################
+Failed test 89 for LB : msg= Detection of invalid alignment - LB
+
+
+You have failed TestId = 89 - Detection of invalid alignment - LB     308 : 90250006 I-Type lbu
+##########################################################################################################################
+Failed test 90 for LBU : msg= Detection of invalid alignment - LBU
+
+
+You have failed TestId = 90 - Detection of invalid alignment - LBU     30c : 00e00809 R-Type uknown fncode 9mips_ExceptionInvalidInstruction     310 : 00000000 R-Type sll
+##########################################################################################################################
+Failed test 91 for JALR : msg= Basic Testing - JALR
+
+
+You have failed TestId = 91 - Basic Testing - JALR     314 : 3c04dbef I-Type lui
+You have passed TestId = 92 - Basic testing - LUI     318 : 06400004 I-Type bltz  new pcN=32c
+     31c : 00000000 R-Type sll
+You have passed TestId = 93 - Condition True - BLTZ     32c : 00023bc0 R-Type sll
+You have passed TestId = 94 - Basic testing - SLL     330 : a494000b I-Type sh
+##########################################################################################################################
+Failed test 95 for SH : msg= Basic Testing- SH - positive offset
+
+
+You have failed TestId = 95 - Basic Testing- SH - positive offset     334 : 06400004 I-Type bltz  not taken.
+     338 : 00000000 R-Type sll
+You have passed TestId = 96 - Condition False - BLTZ     33c : 14a40014 I-Type bne
+  new pcN=390
+     340 : 00000000 R-Type sll
+You have passed TestId = 97 - Basic testing -Positive offset - BNE     390 : 00851822 R-Type sub
+    overflow, s=-2147483600, t=100
+mips_ExceptionArithmeticOverflowYou have passed TestId = 98 - Overflow Detection (Lower Bound)- SUB     394 : 05f1fffc I-Type bgezal  new pcN=388
+     398 : 00000000 R-Type sll
+You have passed TestId = 99 - NEGATIVE offset - BGEZAL     388 : 0071001a R-Type div
+     38c : 00004010 R-Type mfhi
+     390 : 00004812 R-Type mflo
+You have passed TestId = 100 - basic testing DIV     394 : 0071001b R-Type divu
+
+     398 : 00004010 R-Type mfhi
+     39c : 00004812 R-Type mflo
+You have passed TestId = 101 - basic testing DIVU     3a0 : 00600011 R-Type uknown fncode 17mips_ExceptionInvalidInstruction     3a4 : 00004010 R-Type mfhi
+##########################################################################################################################
+Failed test 102 for MTHI : msg= basic testing MTHI
+
+
+You have failed TestId = 102 - basic testing MTHI     3a8 : 00004010 R-Type mfhi
+##########################################################################################################################
+Failed test 103 for MFHI : msg= basic testing MFHI
+
+
+You have failed TestId = 103 - basic testing MFHI     3ac : 00600013 R-Type uknown fncode 19mips_ExceptionInvalidInstruction     3b0 : 00004812 R-Type mflo
+##########################################################################################################################
+Failed test 104 for MTLO : msg= basic testing MTLO
+
+
+You have failed TestId = 104 - basic testing MTLO     3b4 : 00003812 R-Type mflo
+##########################################################################################################################
+Failed test 105 for MFLO : msg= basic testing MFLO
+
+
+You have failed TestId = 105 - basic testing MFLO
+| Instruction |  tests | passed | success |
++-------------+--------+--------+---------+
+|         ADD |      6 |      6 |  100.0 |
+|        ADDI |      2 |      2 |  100.0 |
+|       ADDIU |      2 |      2 |  100.0 |
+|        ADDU |      3 |      3 |  100.0 |
+|         AND |      4 |      4 |  100.0 |
+|        ANDI |      1 |      1 |  100.0 |
+|         BEQ |      4 |      4 |  100.0 |
+|        BGEZ |      1 |      1 |  100.0 |
+|      BGEZAL |      1 |      1 |  100.0 |
+|        BGTZ |      1 |      1 |  100.0 |
+|        BLEZ |      1 |      1 |  100.0 |
+|        BLTZ |      2 |      2 |  100.0 |
+|      BLTZAL |      1 |      1 |  100.0 |
+|         BNE |      2 |      2 |  100.0 |
+|         DIV |      1 |      1 |  100.0 |
+|        DIVU |      1 |      1 |  100.0 |
+|           J |      1 |      1 |  100.0 |
+|         JAL |      1 |      1 |  100.0 |
+|        JALR |      1 |      0 |    0.0 |
+|          JR |      1 |      1 |  100.0 |
+|          LB |      3 |      2 |   66.7 |
+|         LBU |      3 |      2 |   66.7 |
+|          LH |      3 |      1 |   33.3 |
+|         LHU |      3 |      1 |   33.3 |
+|         LUI |      1 |      1 |  100.0 |
+|          LW |      3 |      3 |  100.0 |
+|        MFHI |      1 |      0 |    0.0 |
+|        MFLO |      1 |      0 |    0.0 |
+|        MTHI |      1 |      0 |    0.0 |
+|        MTLO |      1 |      0 |    0.0 |
+|          OR |      1 |      1 |  100.0 |
+|         ORI |      1 |      1 |  100.0 |
+|          SB |      3 |      0 |    0.0 |
+|          SH |      4 |      0 |    0.0 |
+|         SLL |      3 |      3 |  100.0 |
+|        SLLV |      2 |      2 |  100.0 |
+|         SLT |      3 |      3 |  100.0 |
+|        SLTI |      4 |      4 |  100.0 |
+|       SLTIU |      4 |      4 |  100.0 |
+|        SLTU |      3 |      3 |  100.0 |
+|         SRA |      3 |      3 |  100.0 |
+|        SRAV |      2 |      0 |    0.0 |
+|         SRL |      2 |      2 |  100.0 |
+|        SRLV |      2 |      2 |  100.0 |
+|         SUB |      3 |      3 |  100.0 |
+|        SUBU |      4 |      4 |  100.0 |
+|          SW |      3 |      3 |  100.0 |
+|         XOR |      1 |      1 |  100.0 |
+|        XORI |      1 |      1 |  100.0 |
++-------------+--------+--------+---------+---------+
+
+Total instructions tested:  49
+Fully working :             37 ( 75.5%)
+Partially working :          4 (  8.2%)
+Not working at all :         8 ( 16.3%)
+
+| Instruction |  tests | passed | success |
++-------------+--------+--------+---------+
+|         ADD |      6 |      6 |  100.0 |
+|        ADDI |      2 |      2 |  100.0 |
+|       ADDIU |      2 |      2 |  100.0 |
+|        ADDU |      3 |      3 |  100.0 |
+|         AND |      4 |      4 |  100.0 |
+|        ANDI |      1 |      1 |  100.0 |
+|         BEQ |      4 |      4 |  100.0 |
+|        BGEZ |      1 |      1 |  100.0 |
+|      BGEZAL |      1 |      1 |  100.0 |
+|        BGTZ |      1 |      1 |  100.0 |
+|        BLEZ |      1 |      1 |  100.0 |
+|        BLTZ |      2 |      2 |  100.0 |
+|      BLTZAL |      1 |      1 |  100.0 |
+|         BNE |      2 |      2 |  100.0 |
+|         DIV |      1 |      1 |  100.0 |
+|        DIVU |      1 |      1 |  100.0 |
+|           J |      1 |      1 |  100.0 |
+|         JAL |      1 |      1 |  100.0 |
+|        JALR |      1 |      0 |    0.0 |
+|          JR |      1 |      1 |  100.0 |
+|          LB |      3 |      2 |   66.7 |
+|         LBU |      3 |      2 |   66.7 |
+|          LH |      3 |      1 |   33.3 |
+|         LHU |      3 |      1 |   33.3 |
+|         LUI |      1 |      1 |  100.0 |
+|          LW |      3 |      3 |  100.0 |
+|        MFHI |      1 |      0 |    0.0 |
+|        MFLO |      1 |      0 |    0.0 |
+|        MTHI |      1 |      0 |    0.0 |
+|        MTLO |      1 |      0 |    0.0 |
+|          OR |      1 |      1 |  100.0 |
+|         ORI |      1 |      1 |  100.0 |
+|          SB |      3 |      0 |    0.0 |
+|          SH |      4 |      0 |    0.0 |
+|         SLL |      3 |      3 |  100.0 |
+|        SLLV |      2 |      2 |  100.0 |
+|         SLT |      3 |      3 |  100.0 |
+|        SLTI |      4 |      4 |  100.0 |
+|       SLTIU |      4 |      4 |  100.0 |
+|        SLTU |      3 |      3 |  100.0 |
+|         SRA |      3 |      3 |  100.0 |
+|        SRAV |      2 |      0 |    0.0 |
+|         SRL |      2 |      2 |  100.0 |
+|        SRLV |      2 |      2 |  100.0 |
+|         SUB |      3 |      3 |  100.0 |
+|        SUBU |      4 |      4 |  100.0 |
+|          SW |      3 |      3 |  100.0 |
+|         XOR |      1 |      1 |  100.0 |
+|        XORI |      1 |      1 |  100.0 |
++-------------+--------+--------+---------+---------+
+
+Total instructions tested:  49
+Fully working :             37 ( 75.5%)
+Partially working :          4 (  8.2%)
+Not working at all :         8 ( 16.3%)
